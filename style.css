@@ -102,6 +102,8 @@ ul li::before {
     background-size: cover;
     top: 13px;
     left: -29px;
+    margin-right: 5px;
+
 
 }
 
@@ -123,5 +125,78 @@ ul li.checked {
     height: 30px;
     right: 10px;
 
+}
+
+@media (max-width:450px){
+    .todo_app {
+        max-width:340px ;
+        margin: 100px auto 20px;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .todo_app h2 {
+        font-size: 24px;
+    }
+    .row {
+        height: 50px;
+        border-radius: 10px;
+        justify-content: center;
+
+
+ 
+    }
+    .row input {
+        font-size: 14px;
+     
+    }
+    .row button {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        padding: 15px 25px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 14px;
+
+    }
+
+    ul {
+        margin: 30px 30px;
+        padding: 0 20px;
+    
+    
+    }
+    ul li {
+        padding: 10px 0;
+        font-size: 20px;
+        
+    }
+    ul li::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-image:url(image/unchecked.png) ;
+        background-position: center;
+        background-size: cover;
+        top: 13px;
+        left: -29px;
+    
+    }
+    .cancel{
+        background-image:url(image/cancel.png) ;
+        background-position: center;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -5px;
+        top: 11px;
+    
+    }
 }
 
