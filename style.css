@@ -52,7 +52,7 @@ body {
     outline: none;
     background-color: antiquewhite;
     font-size: 16px;
-    color: gray;
+    color: brown;
     font-family: 'Inter',sans-serif;
     font-weight: 400;
 }
@@ -88,7 +88,7 @@ ul li {
     color:antiquewhite ;
     position: relative;
     cursor: pointer;
-    color: rgb(102, 99, 99);
+    color: wheat;
     
 }
 

@@ -14,8 +14,8 @@ It helps users stay organized by adding, deleting, and managing daily tasks in a
 
 ## Screenshot
 
-![Screenshot](image/Screenshoot1.png)
-![Screenshot](image/Screensho0t2.png)
+![Screenshot](image/one.png)
+![Screenshot](image/two.png)
 
 ---
 
