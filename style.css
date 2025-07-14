@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Inter',sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(139, 6, 6, 0.834), rgb(159, 74, 25));
+    display: flex;
+
+
+
+}
+
+.todo_app {
+    width: 100%;
+    max-width:540px ;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    background-image: linear-gradient(rgb(165, 116, 42,0.5)), url(image/pexels-eva-bronzini-7599590.jpg);
+    border-radius: 20px;
+    
+
+
+}
+
+.todo_app h2 {
+    font-size: 34px;
+    text-align: center;
+    color:antiquewhite;
+
+
+}
+
+.row {
+    padding-left: 20px;
+    margin: 20px 10px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row input {
+    border: none;
+    outline: none;
+    background-color: antiquewhite;
+    font-size: 16px;
+    color: gray;
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+}
+
+.row button {
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: brown;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.row button:active {
+    background-color:antiquewhite;
+    color: brown;
+}
+
+ul {
+    list-style: none;
+    outline: none;
+    margin: 30px 30px;
+
+
+}
+
+ul li {
+    padding: 10px 0;
+    font-size: 22px;
+    color:antiquewhite ;
+    position: relative;
+    cursor: pointer;
+    color: rgb(102, 99, 99);
+    
+}
+
+ul li::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-image:url(image/unchecked.png) ;
+    background-position: center;
+    background-size: cover;
+    top: 13px;
+    left: -29px;
+
+}
+
+ul li.checked::before {
+    background-image:url(image/checked.png) ;
+}
+ul li.checked {
+    text-decoration: line-through;
+    text-decoration-color: brown;
+}
+
+.cancel{
+    background-image:url(image/cancel.png) ;
+    background-position: center;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+
+}
+
