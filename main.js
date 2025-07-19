@@ -3,7 +3,7 @@ const listContainer = document.getElementById("listContainer");
 
 function add() {
     if (userInput.value === "") {
-        alert("You have to write something")
+        alert("You have to write something");
     } else {
         let li = document.createElement("li");
         li.innerHTML = userInput.value;
@@ -12,9 +12,11 @@ function add() {
         let span = document.createElement("span");
         span.className = "cancel";
         li.appendChild(span);
+        saveData();
         
     }
     userInput.value = "";
+
     
 
 }
@@ -28,6 +30,8 @@ listContainer.addEventListener("click", function(e) {
         e.target.parentElement.remove();
         saveData();
     }
+
+    
 
 
 
